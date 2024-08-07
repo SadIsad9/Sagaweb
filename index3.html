@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio saya</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body{
+        font-family: Arial,Sans-Serif;
+        margin: 0;
+        padding: 0;
+        background-color: #666666;
+        color: #333;
+        scroll-behavior: smooth;
+      }
+      header {
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+  
+        
+      .header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      .header img.profile-photo {
+        border-radius: 50%;
+        width: 100px;
+        height:100px;
+        margin-bottom: 20px;
+        object-fit: cover;
+      }
+      header h1 {
+        margin: 0;
+      }
+      header p{
+        margin: 5px 0;
+        
+      }
+      
+      nav {
+        margin-top: 10px;
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+      }
+      nav ul li {
+        display: inline;
+        margin: 0 15px;
+        margin-left: 20px;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+    
+      }
+      content {
+        max-width: 1200px;
+        padding: 20px;
+        background-color:white;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba (0,0,0 0.1);
+        transform: translateY(50px);
+        transition: all 0.5s ease-out;
+        
+        
+      }
+      pelajar ={
+        margin: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #cccccc;
+        
+      }
+      .content p {
+        color: black;
+        font-family: Arial, Sans-Serif;
+        font-weight: bold;
+        
+      }
+      .skills-container {
+        display: flex;
+        flex-direction: column;
+      }
+      .skills{
+        margin:10px 0;
+      }
+      .skill img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+      }
+      .skills img{
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        background-color: #6777;
+      }
+    .skills-bar {
+      height: 20px;
+      background-color: white;
+      border-radius: 5px;
+    }
+    .projects-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .project-card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 10px;
+      width: cale (30% - 20px);
+      box-sizing: border-box;
+    }
+    .project-card img {
+      wideh: 100%;
+      border-radius: 10px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    form label, form input, form textarea,form button {
+      margin-top: 10px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+    footer .social-media a img {
+      width:30px;
+      height: 30px;
+      margin: 0;
+      transition: transform 0.3s;
+    }
+    footer .social-media a img:hover {
+      transform: scale(1.2s);
+    }
+    
+      
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <img src="foto.jpeg" class="profile-photo">
+        <h1 id="blinkingText">Irsyad dwi saputra</h1>
+        <p id="blinkingText1">Beginner web devloper </p>
+        </div>
+        <nav>
+          
+      
+      <ul>
+        <li><a href="#about" id="blinkingText2">Tentang</a></li>
+        <li><a href="#skills" id="blinkingText3">keahlian</a></li>
+        <li><a href="index.html" id="blinkingText4">home</a></li>
+        <li><a href="contact" id="blinkingText5">kontak</a></li>
+      </ul>
+      </nav>
+    
+    </header>
+    <div class="content"id="about">
+      <p>Saya adalah web devloper dengan pengalaman dalam membuat situs web yang responsif dan menarik</p>
+    </div>
+    
+    <div class="content"id="skills">
+      <h2>keahlian</h2>
+    </div>
+    
+    <div class="skills-container">
+      <div class="skill">
+        <img src="html.jpeg">
+        <div class="skills-bar" style="width:50%;"></div>
+      </div>
+      <div class="skills-container">
+        <div class="skills"
+        >
+          <img src="css.jpeg">
+          <div class="skills-bar" style="width:40%;"></div>
+        </div>
+          
+        </div>
+        
+      </div>
+    </div>
+    <div class="content" id="project">
+      <h2>proyek</h2>
+      <div class="projects-container"> <div class="project-card">
+        <img src="project.jpeg">
+        <h3>project.1</h3>
+        <p>di project 1 saya akan membuat sebuah web sederhana. yang bisa di akses untuk publik</p>
+      </div>
+      </div>
+     
+    </div>
+    </div>
+  
+  <div class="content" id="Pelajar">
+    <h3>• Status</h3>
+    <p>Pelajar</p>
+    <p>Bersekolah di SMAN 2 DASEM</p>
+    <p>Kls XII Ipa gapernah paham sama pelajaran </p>
+  </div>
+    
+    <div class="content" id="contact">
+      <h2>kontak</h2>
+      <form action="submit_contact.php" method="post">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="massage">Pesan;</label>
+        <textarea id="massage" name="massage" required></textarea>
+        
+        <button type="submit">kirim</button>
+        
+        
+        
+      
+        
+      </form>
+    </div>
+    <footer><p>&copy;irsyad dwi saputra</p>
+    <div class="social-media">
+      <a href="https://www.instagram.com/_mungkung2?igsh=eDhzZjltY2kzY2kx"><img src="ig.jpeg"</a>
+    </div>
+    </footer>
+    <script>
+      // Tambahkan animasi pada scroll
+window.addEventListener('scroll', () => {
+  const content = document.querySelectorAll('.content');
+  content.forEach(section => {
+    const sectionTop = section.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+    if (sectionTop < windowHeight - 50) {
+      section.classList.add('active');
+    } else {
+      section.classList.remove('active');
+    }
+  });
+});
+    </script>
+  
+    
+      
+
+
+    
+  </body>
+</html>

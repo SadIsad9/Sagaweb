@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajar</title>
+    <style>
+    body {
+      background-color:#e0f7fa;
+      font-family: Arial,Sans-Serif;
+      margin: 20px;
+      color: #00695c;
+      
+    }
+      h1 {
+        text-align: center;
+        background-color: #00bcd4;
+        color: white;
+        font-size: 24px;
+        padding: 20px;
+        border-radius: 20px;
+        
+        
+      }
+      .content{
+        padding: 20px;
+        text-align: justify;
+        line-height: 1.6;
+        margin: 10px;
+        
+      }
+      p {
+        color: #00695c;
+        text-align: justify;
+        
+        
+      }
+      .content {
+       
+       color:#00695c;
+       text-align: justify;
+       line-height: 1.6;
+       margin: 10px;
+      }
+      img {
+        border-radius: 24px;
+        width: 100%;
+        max-width: 600px;
+        margin: 20pxauto;
+        display: block;
+      }
+      @media (max width:600px) {
+        h1{
+          font-size: 24px;
+          padding: 10px;
+        }
+      }
+      
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+        gap: 10px;
+      }
+      
+      gallery img {
+        width: 30%;
+        margin:5px;
+        border-radius: 10px;
+      }
+      .content {
+        padding: 20px;
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
+      .header {
+        text-align: center;
+        font-size: 36px;
+        color: white;
+      }
+      nav {
+        text-align: center;
+        margin-top: 10px;
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline;
+        margin: 0 15px;
+      }
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+      nav ul li a:hover {
+        text-decoration: underline;
+        color: #ffeb3b;
+        transition: color 0.3s;
+      }
+      
+     .gallery img:hover{
+       transform: scale (1.05);
+       transition: transform 0.3s;
+     }
+     .carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel-item {
+  display: none;
+  width: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+    </style>
+      
+    
+    
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#homr">beranda</a>
+          <li><a href="#about">tentang</a>
+          <li><a href="#gallery">Galeri</a>
+          <li><a href="index3.html">portofolio saya</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Wonosobo</h1>
+    <hr />
+    <p>Apa itu wonosobo? pasti kalian tidak asing dengan nama kota ini.</p>
+    
+    <img src="Wonosobo.jpg" alt="Wonosobo asri" width="300px" class="image">
+    <hr />
+    <div class="content"
+    <p2>Ya,wonosobo adalah salah satu kota yang terletak di jawa tengah.Salah satu kota asri yang sangat sejuk terkenal dengan makanan khas nya.yaitu mie ongklok,Tempe kemul,dan sego megono</p2> </div>
+    <div class="content">
+    <h2>Selamat datang</h2>
+    <p class="text">Wonosobo adalah kota yang sangat terkenal dengan ke indahan alam dan kulinernya.Kota ini banyak tempat menarik yang bisa di kunjungi.</p>
+    </div>
+    <div class="content" id="about">
+      <h3>Tentang Wonosobo</h3>
+      <p>Wonosobo memiliki sejarah dan budaya yang kaya.Dikelilingi oleh pegunungan,kota ini menawarkan pemandangan yang menakjubkan dan udara yang sejuk</p>
+      
+    </div>
+   
+    <div class="content" id="gallery">
+      <h3>Tentang galeri</h3>
+        <div class="carousel">
+      <div class="carousel-item">
+        <img src="dieng.jpeg" alt="dieng batur">
+        
+      </div>
+      <div class="carousel">
+        <div class="carousel-item">
+          <img src="telaga warna.jpeg" alt="telaga warnaa">
+          
+        </div>
+      </div>
+      <div class="carousel">
+        <div class="carousel-item">
+          <img src="mie ongklok.jpeg" alt="mie ongklok">
+          
+        </div>
+        
+      </div>
+      <div class="carousel">
+        <div class="carousel-item">
+          <img src="Hijau.jpeg" alt="pemandangan" />
+          
+        </div>
+        
+      </div>
+      <div class="carousel">
+        <div class="carousel-item">
+          <img src="gunung.jpeg" alt="gunung biru" />
+          
+          
+        </div>
+<p>klik <a href="index2.html">disini</a> untuk menuju tentang kota sampit</p>
+    </div>
+    
+  
+      
+    
+    <button class="carousel-control prev">❮</button>
+    <button class="carousel-control next">❯</button>
+   <script>
+      let slideIndex = 0;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  let slides = document.querySelectorAll('.carousel-item');
+  if (n >= slides.length) slideIndex = 0;
+  if (n < 0) slideIndex = slides.length - 1;
+  slides.forEach(slide => slide.style.display = 'none');
+  slides[slideIndex].style.display = 'block';
+}
+
+document.querySelector('.prev').addEventListener('click', () => plusSlides(-1));
+document.querySelector('.next').addEventListener('click', () => plusSlides(1));
+    </script>
+    <audio controls src="jawa.mp3"></audio>
+     <footer>
+      <p>&copy; 2024 irsyad dwi saputra</p>
+    </footer>
+  </body>
+  
+</html>

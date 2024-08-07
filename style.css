@@ -1,0 +1,37 @@
+.content {
+  padding: 20px;
+  background-color: #cccccc;
+  margin: 20px;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease-out;
+}
+
+.content.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+@keyframes blinkColor {
+  0% { opacity:1; color:red;}
+  50% { opacity:0; color:#99ccff;}
+  100% { opacity:1; color:white;}
+}
+#blinkingText {
+ animation: blinkColor 2s infinite;
+}
+#blinkingText1 {
+  animation: blinkColor 3s infinite;
+}
+#blinkingText2 {
+  animation: blinkColor 4s infinite;
+}
+#blinkingText3 {
+  animation: blinkColor 5s infinite;
+}
+#blinkingText4 {
+  animation: blinkColor 6s infinite;
+}
+#blinkingText5 {
+  animation: blinkColor 7s infinite;
+}
