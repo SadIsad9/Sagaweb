@@ -13,25 +13,27 @@
   transform: translateY(0);
 }
 @keyframes blinkColor {
-  0% { opacity:1; color:red;}
-  50% { opacity:0; color:#99ccff;}
-  100% { opacity:1; color:white;}
+  0% { color: rgb(255, 0, 0); }    /* Merah */
+  25% { color: rgb(255,0,0); } /* Jingga */
+  50% { color: rgb(255,255,255); } /* Kuning */
+  75% { color: rgb(255,255,255); }   /* Hijau */
+  100% { color: rgb(255,0,0); }  /* Biru */
 }
 #blinkingText {
- animation: blinkColor 2s infinite;
+ animation: blinkColor 6s infinite;
 }
 #blinkingText1 {
-  animation: blinkColor 3s infinite;
-}
-#blinkingText2 {
-  animation: blinkColor 4s infinite;
-}
-#blinkingText3 {
   animation: blinkColor 5s infinite;
 }
+#blinkingText2 {
+  animation: blinkColor 0.4s infinite;
+}
+#blinkingText3 {
+  animation: blinkColor 0.5s infinite;
+}
 #blinkingText4 {
-  animation: blinkColor 6s infinite;
+  animation: blinkColor 0.6s infinite;
 }
 #blinkingText5 {
-  animation: blinkColor 7s infinite;
-}
+  animation: blinkColor 0.7s infinite;
+    }
